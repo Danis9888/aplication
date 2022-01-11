@@ -1,0 +1,28 @@
+Container:
+
+<Container>:
+
+    canvas.before:
+        Color:
+            rgba: (1, 1, 1, 1)
+        Rectangle:
+            source: 'bmstu.jpg'
+            size: root.width, root.height
+            pos: self.pos
+
+
+    AnchorLayout:
+        GridLayout:
+            rows : 3
+            size_hint :[0.8,0.5]
+            spacing : 50
+
+            Button:
+                text : "Начать работу"
+                on_press : root.click(self)
+            Button:
+                text : "Настройка"
+                on_press : root.click(self)
+            Button:
+                text : "Выход"
+                on_press : root.click(self)
